@@ -1,7 +1,7 @@
 
 
 {
-    "name": "orvice/NodeQuery-API",
+    "name": "orvice/node-query-api ",
     "type": "library",
     "description": "NodeQuery API",
     "keywords": ["NodeQuery","API"],
