@@ -32,4 +32,8 @@ class Client{
         return $srvAry;
     }
 
+    public function serverInfo($id){
+
+    }
+
 }
