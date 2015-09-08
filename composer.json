@@ -1,10 +1,10 @@
 
 
 {
-    "name": "orvice/node-query-api", 
+    "name": "orvice/node-query",
     "description": "NodeQuery API",
     "keywords": ["NodeQuery","API"],
-    "homepage": "https://github.com/orvice/NodeQuery-API",
+    "homepage": "https://github.com/orvice/Node-Query",
     "license": "GPL3",
     "authors": [
         {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": { 
-            "NodeQuery-API": "src/"
+            "NodeQuery": "src/"
         }
     }
 }
