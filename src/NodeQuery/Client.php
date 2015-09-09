@@ -13,27 +13,22 @@ class Client{
         $this->key = $key;
     }
 
-    public function request($url)
-    {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_URL,$url);
-        $resp = curl_exec($ch);
-        curl_close($ch);
-        return $resp;
+    public function account(){
+        $url = "https://nodequery.com/api/account?api_key=".$this->key;
+        return json_decode(Request::get($url),true);
     }
 
     public function serverList()
     {
         $url = $this->serverListUrl.$this->key;
-        $rt = $this->request($url);
+        $rt = Request::get($url);
         $srvAry = json_decode($rt,true);
         return $srvAry;
     }
 
-    public function serverInfo($id){
-
+    public function server($id){
+        $server = new Server($this->key,$id);
+        return $server;
     }
 
 }
