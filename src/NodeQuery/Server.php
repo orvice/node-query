@@ -26,7 +26,7 @@ class Loads
 {
     private $baseUrl = "https://nodequery.com/api/loads/";
 
-    private $key, $id;
+    private $key, $id, $interval;
 
     public function __construct($key,$id,$interval){
         $this->key = $key;
