@@ -31,4 +31,9 @@ class Client{
         return $server;
     }
 
+    public function load($id,$interval) {
+    	$load = new Load($this->key,$id,$interval);
+    	return $load;
+    }
+
 }
